@@ -13,18 +13,20 @@ function showSlide() {
     for (var i = 0; i < slides.length; i++) {
         slides[i].classList.add("opacity-0");
         slides[i].classList.add("w-0");
-        items[i].classList.remove("w-12");
-        items[i].classList.remove("bg-blue-600");
-        items[i].classList.add("bg-blue-300");
+        items[i].classList.remove("lg:w-12");
+        items[i].classList.remove("w-8");
+        items[i].classList.remove("lg:opacity-100");
+        items[i].classList.add("lg:bg-opacity-30");
 
         // slides[i].classList.add("hidden");
 
     }
     slides[currentSlide].classList.remove("opacity-0");
     slides[currentSlide].classList.remove("w-0");
-    items[currentSlide].classList.add("w-12");
-    items[currentSlide].classList.add("bg-blue-600");
-    items[currentSlide].classList.remove("bg-blue-300");
+    items[currentSlide].classList.add("lg:w-12");
+    items[currentSlide].classList.add("w-8");
+    items[currentSlide].classList.add("lg:bg-opacity-100");
+    items[currentSlide].classList.remove("lg:bg-opacity-30");
 }
 
 showSlide();

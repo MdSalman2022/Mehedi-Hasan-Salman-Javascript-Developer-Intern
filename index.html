@@ -10,17 +10,20 @@
 <body>
 
 <div class="">
-    <div id="slider" class="relative p-10 flex overflow-hidden justify-center">
+    <div id="slider" class="relative lg:p-10 flex overflow-hidden justify-center">
       
-      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/LRydxQH/slider1.jpg" alt=""></div>
-      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/rkRWZ2P/slider2.jpg" alt=""></div>
-      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/9HMw4ZR/slider3.jpg" alt=""></div>
-    <button class="absolute top-1/2 left-12 h-10 w-10 text-white opacity-80 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
-    <button class="absolute top-1/2 right-12 h-10 w-10 text-white opacity-80 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
-    <ul id="pagination" class="absolute bottom-0 flex gap-5">
-      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
-      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
-      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
+      <div class="slide transition-all duration-500 ease-in-out h-full w-full lg:h-[800px] "><img class=" rounded-lg h-full w-full rounded-lg object-contain" src="https://i.ibb.co/LRydxQH/slider1.jpg" alt=""></div>
+      <div class="slide transition-all duration-500 ease-in-out h-full w-full lg:h-[800px] "><img class=" rounded-lg h-full w-full rounded-lg object-contain" src="https://i.ibb.co/rkRWZ2P/slider2.jpg" alt=""></div>
+      <div class="slide transition-all duration-500 ease-in-out h-full w-full lg:h-[800px] "><img class=" rounded-lg h-full w-full rounded-lg object-contain" src="https://i.ibb.co/9HMw4ZR/slider3.jpg" alt=""></div>
+    
+    
+    <button class="absolute top-1/2 lg:top-1/2 left-2 lg:left-12 h-10 w-10 text-white opacity-70 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+    <button class="absolute top-1/2 lg:top-1/2 right-2 lg:right-12 h-10 w-10 text-white opacity-70 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+    
+    <ul id="pagination" class="absolute bottom-2 lg:bottom-0 flex gap-2 lg:gap-5">
+      <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>
+      <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>
+      <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>
     </ul>
   </div>
 </div>
