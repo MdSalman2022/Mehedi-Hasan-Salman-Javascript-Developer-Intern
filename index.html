@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="">
+    <div id="slider" class="relative p-10 flex overflow-hidden justify-center">
+      
+      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/LRydxQH/slider1.jpg" alt=""></div>
+      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/rkRWZ2P/slider2.jpg" alt=""></div>
+      <div class="slide transition-all duration-500 ease-in-out w-screen pb-3"><img class=" rounded-lg lg:h-[800px] w-screen object-contain" src="https://i.ibb.co/9HMw4ZR/slider3.jpg" alt=""></div>
+    <button class="absolute top-1/2 left-12 h-10 w-10 text-white opacity-80 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+    <button class="absolute top-1/2 right-12 h-10 w-10 text-white opacity-80 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+    <ul id="pagination" class="absolute bottom-0 flex gap-5">
+      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
+      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
+      <li class="w-4 h-4 transition-all duration-500 ease-in-out rounded-full bg-blue-600 pagination-item"></li>
+    </ul>
+  </div>
+</div>
+
+
+    <script src="./Js/index.js"></script>
+</body>
+</html>
