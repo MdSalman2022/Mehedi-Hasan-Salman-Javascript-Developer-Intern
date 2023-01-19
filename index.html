@@ -2,10 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <title>Slider</title>
 </head>
 <body>
 
@@ -20,7 +22,7 @@
     <button class="absolute top-1/2 lg:top-1/2 left-2 lg:left-12 h-10 w-10 text-white opacity-70 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
     <button class="absolute top-1/2 lg:top-1/2 right-2 lg:right-12 h-10 w-10 text-white opacity-70 hover:opacity-100 transition duration-300 drop-shadow-2xl bg-blue-600 rounded-full" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
     
-    <ul id="pagination" class="absolute bottom-2 lg:bottom-0 flex gap-2 lg:gap-5">
+    <ul id="pagination" class="absolute bottom-2 lg:bottom-0 flex gap-2 lg:gap-5 cursor-pointer">
       <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>
       <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>
       <li class="w-2 h-2 lg:w-4 lg:h-4 transition-all duration-500 ease-in-out rounded-full bg-white lg:bg-blue-600 pagination-item"></li>

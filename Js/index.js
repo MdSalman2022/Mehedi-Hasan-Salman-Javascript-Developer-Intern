@@ -18,10 +18,8 @@ function showSlide() {
         items[i].classList.remove("w-8");
         items[i].classList.remove("lg:opacity-100");
         items[i].classList.add("lg:bg-opacity-30");
-
-        // slides[i].classList.add("hidden");
-
     }
+
     slides[currentSlide].classList.remove("opacity-0");
     slides[currentSlide].classList.remove("w-0");
     items[currentSlide].classList.add("lg:w-12");
@@ -58,14 +56,12 @@ startAutoplay();
 //Next slide function
 function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
-    stopAutoplay()
     showSlide();
 }
 
 //Prev slide function
 function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    stopAutoplay()
     showSlide();
 }
 
@@ -111,6 +107,7 @@ for (let i = 0; i < slides.length; i++) {
     });
 }
 
+showSlide();
 
 //stop autoplay when mouse enter the slider and start autoplay when mouse leave the slider
 
