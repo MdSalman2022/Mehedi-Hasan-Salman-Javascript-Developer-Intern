@@ -1,16 +1,17 @@
-var slider = document.getElementById("slider");
-var slides = slider.getElementsByClassName("slide");
-var pagination = document.getElementById("pagination");
-var items = slider.getElementsByClassName("pagination-item");
+let slider = document.getElementById("slider");
+let slides = slider.getElementsByClassName("slide");
+let pagination = document.getElementById("pagination");
+let items = slider.getElementsByClassName("pagination-item");
 
-var currentSlide = 0;
-var prevBtn = document.getElementById("prev-btn");
-var nextBtn = document.getElementById("next-btn");
-var intervalId;
+let currentSlide = 0;
+let prevBtn = document.getElementById("prev-btn");
+let nextBtn = document.getElementById("next-btn");
+let intervalId;
+
 
 //Show slide function 
 function showSlide() {
-    for (var i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].classList.add("opacity-0");
         slides[i].classList.add("w-0");
         items[i].classList.remove("lg:w-12");
@@ -34,7 +35,7 @@ showSlide();
 
 
 //Add event listener to all the pagination items
-for (var i = 0; i < items.length; i++) {
+for (let i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function () {
         currentSlide = Array.from(items).indexOf(this);
         stopAutoplay();
@@ -57,36 +58,32 @@ startAutoplay();
 //Next slide function
 function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
-
-    console.log(currentSlide);
-
+    stopAutoplay()
     showSlide();
 }
 
 //Prev slide function
 function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-
-    console.log(currentSlide);
-
+    stopAutoplay()
     showSlide();
 }
 
 
 
 //Add event listener to all the slides
-for (var i = 0; i < slides.length; i++) {
+for (let i = 0; i < slides.length; i++) {
     slides[i].addEventListener("click", function () {
-        var imgSrc = this.getElementsByTagName("img")[0].src;
-        var fullScreenImg = document.createElement("img");
+        let imgSrc = this.getElementsByTagName("img")[0].src;
+        let fullScreenImg = document.createElement("img");
         fullScreenImg.src = imgSrc;
         fullScreenImg.classList.add("full-screen-img");
 
         //Create prev and next buttons
-        var prevBtn = document.createElement("button");
+        let prevBtn = document.createElement("button");
         prevBtn.innerHTML = `<i class="fa-solid fa-angle-left"></i>`
         prevBtn.classList.add("prev-btn");
-        var nextBtn = document.createElement("button");
+        let nextBtn = document.createElement("button");
         nextBtn.innerHTML = `<i class="fa-solid fa-angle-right"></i>`
         nextBtn.classList.add("next-btn");
 
